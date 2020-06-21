@@ -18,6 +18,18 @@ function App() {
             });
     }
 
+    const updateTodo = (obj) => {
+        axios({
+            method: 'patch',
+            url: `${getAll}/${obj._id}`,
+            data: {
+                name: obj.name,
+                description: obj.description
+            }
+        }).then(()=> getTodo())
+
+    }
+
     useEffect(()=>{
         getTodo();
     }, [])
@@ -25,7 +37,7 @@ function App() {
   return (
     <div>
       <TodoForm/>
-      <TodoList list={todoList}/>
+      <TodoList list={todoList} updateTodo={updateTodo}/>
     </div>
   );
 }
