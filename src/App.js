@@ -14,7 +14,7 @@ function App() {
             url: getAll,
         })
             .then(function (response) {
-                console.log(response.data)
+                setTodoList(response.data)
             });
     }
 
@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <TodoForm/>
-      <TodoList/>
+      <TodoList list={todoList}/>
     </div>
   );
 }
