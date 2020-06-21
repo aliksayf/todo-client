@@ -30,14 +30,34 @@ function App() {
 
     }
 
+    const delTodo = (id) => {
+        axios({
+            method: 'delete',
+            url: `${getAll}/${id}`,
+        }).then(()=> getTodo())
+
+    }
+
+    const createTodo = (obj) => {
+        axios({
+            method: 'post',
+            url: `${getAll}`,
+            data: {
+                name: obj.name,
+                description: obj.description
+            }
+        }).then(()=> getTodo())
+
+    }
+
     useEffect(()=>{
         getTodo();
     }, [])
 
   return (
     <div>
-      <TodoForm/>
-      <TodoList list={todoList} updateTodo={updateTodo}/>
+      <TodoForm createTodo={createTodo}/>
+      <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo}/>
     </div>
   );
 }
