@@ -24,7 +24,8 @@ function App() {
             url: `${getAll}/${obj._id}`,
             data: {
                 name: obj.name,
-                description: obj.description
+                description: obj.description,
+                done: obj.done
             }
         }).then(()=> getTodo())
 
