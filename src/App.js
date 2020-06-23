@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import axios from "axios";
 
@@ -57,8 +56,8 @@ function App() {
 
   return (
     <div className='container mt-3'>
-      <TodoForm createTodo={createTodo}/>
-      <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo}/>
+      {/*<TodoForm createTodo={createTodo}/>*/}
+      <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo} createTodo={createTodo}/>
     </div>
   );
 }
