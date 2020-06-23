@@ -18,7 +18,9 @@ function TodoList(props) {
             </tr>
             </thead>
             <tbody>
-            {props.list.map(el => <TodoItem key={el._id} item={el} updateTodo={props.updateTodo} delTodo={props.delTodo}
+            {props.list.length === 0
+                ?<p className='badge-danger'>{props.message || 'There is no connection to server!'}</p>
+                : props.list.map(el => <TodoItem key={el._id} item={el} updateTodo={props.updateTodo} delTodo={props.delTodo}
                                             editedId={editedId} setEditedId={setEditedId}/>
             )}
             </tbody>

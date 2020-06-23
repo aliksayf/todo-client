@@ -6,6 +6,7 @@ const getAll = 'http://localhost:5000/todo'
 
 function App() {
     const [todoList, setTodoList] = useState([])
+    let message = ''
 
     const getTodo = () => {
         axios({
@@ -14,7 +15,8 @@ function App() {
         })
             .then(function (response) {
                 setTodoList(response.data)
-            });
+            })
+        .catch((e) => message = e)
     }
 
     const updateTodo = (obj) => {
@@ -57,7 +59,7 @@ function App() {
   return (
     <div className='container mt-3'>
       {/*<TodoForm createTodo={createTodo}/>*/}
-      <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo} createTodo={createTodo}/>
+      <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo} createTodo={createTodo} message={message}/>
     </div>
   );
 }
