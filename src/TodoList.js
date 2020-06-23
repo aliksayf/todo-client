@@ -6,7 +6,7 @@ function TodoList(props) {
     const [editedId, setEditedId] = useState({'_id': '', name: 'name'})
 
     return (
-        <table className="table table-sm">
+        <table className="table">
             <thead>
             <tr>
                 <th scope="col" >Done</th>

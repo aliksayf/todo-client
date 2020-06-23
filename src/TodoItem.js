@@ -26,36 +26,36 @@ function TodoItem(props) {
 
     return (
         <>
-            <tr className="row1">
+            <tr className="row1 "  onClick={() => item._id !== editedId._id && setEditedId({})}>
 
                 <th>
                    <input type='checkbox' checked={item.done} onChange={doneTodo}/>
                 </th>
                 <td>
                     {item._id === editedId._id
-                        ? <span className="input-group">
-                                <input value={editedId.name}
+                        ? <div className="input-group">
+                                <input className="form-control" value={editedId.name}
                                        onChange={(e) => setEditedId({...editedId, name: e.target.value})}/>
-                                <div className="input-group-append">
-                                    <span onClick={() => update(editedId)}>&#10004;</span>
-                                    <span onClick={() => setEditedId({})}>&#10006;</span>
+                                <div className="input-group-append mr-n3">
+                                    <button onClick={() => update(editedId)}>&#10004;</button>
+                                    <button onClick={() => setEditedId({})}>&#10006;</button>
                                 </div>
-                            </span>
-                        : <span className={item.done ? 'text-decoration-line-through':''} onDoubleClick={() => setEditedId(item)}>
+                            </div>
+                        : <span className={item.done ? 'text-decoration-line-through mr-5':' mr-5'} onDoubleClick={() => setEditedId(item)}>
                         {item.name}
                     </span>}
                 </td>
                 <td>
                     {item._id === editedId._id
-                        ? <span className="input-group">
-                                <input value={editedId.description}
+                        ? <div className="input-group " >
+                                <input className="form-control" value={editedId.description}
                                        onChange={(e) => setEditedId({...editedId, description: e.target.value})}/>
-                                <div className="input-group-append">
-                                    <span  onClick={() => update(editedId)}>&#10004;</span>
-                                    <span  onClick={() => setEditedId({})}>&#10006;</span>
+                                <div className="input-group-append mr-n3">
+                                        <button onClick={() => update(editedId)}>&#10004;</button>
+                                        <button onClick={() => setEditedId({})}>&#10006;</button>
                                 </div>
-                            </span>
-                        : <span className={item.done ? 'text-decoration-line-through':''} onDoubleClick={() => setEditedId(item)}>
+                            </div>
+                        : <span className={item.done ? 'text-decoration-line-through mr-5':' mr-5'} onDoubleClick={() => setEditedId(item)}>
                         {item.description}
                     </span>}
                 </td>
