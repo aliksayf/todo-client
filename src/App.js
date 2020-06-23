@@ -56,7 +56,7 @@ function App() {
     }, [])
 
   return (
-    <div className='container'>
+    <div className='container mt-3'>
       <TodoForm createTodo={createTodo}/>
       <TodoList list={todoList} updateTodo={updateTodo} delTodo={delTodo}/>
     </div>

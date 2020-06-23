@@ -14,24 +14,24 @@ function TodoForm(props) {
     }
 
   return (
-    <div className='form-group form-row'>
+    <div className='form-group form-row ml-lg-5 pl-lg-3'>
       <input
           type="text"
-          className='form-control col-3 '
+          className='form-control col-3 mr-3'
           placeholder='Name'
           value={newTodo.name}
           onChange={(e) => setNewTodo({...newTodo, name: e.target.value})}
       />
       <input
           type="text"
-          className='form-control col-5 '
+          className='form-control col-5 mr-3'
           placeholder='Description'
           value={newTodo.description}
           onChange={(e) => setNewTodo({...newTodo, description: e.target.value})}
       />
       <button
           type='submit'
-          className='btn btn-primary '
+          className='btn btn-primary mr-3'
           onClick={createNewItem}
           disabled={(newTodo.name === '' || newTodo.description === '')}
       >

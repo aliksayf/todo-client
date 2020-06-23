@@ -10,8 +10,8 @@ function TodoList(props) {
             <thead>
             <tr>
                 <th scope="col" >Done</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
+                <th scope="col">Name <span><i><small> (double click to edit)</small></i></span></th>
+                <th scope="col">Description <span><i><small> (double click to edit)</small></i></span></th>
                 <th scope="col">Delete</th>
             </tr>
             </thead>
