@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/todo-client/static/css/main.eea13354.chunk.css",
-    "main.js": "/todo-client/static/js/main.472e960a.chunk.js",
-    "main.js.map": "/todo-client/static/js/main.472e960a.chunk.js.map",
+    "main.js": "/todo-client/static/js/main.bc89548d.chunk.js",
+    "main.js.map": "/todo-client/static/js/main.bc89548d.chunk.js.map",
     "runtime-main.js": "/todo-client/static/js/runtime-main.ffdc7b88.js",
     "runtime-main.js.map": "/todo-client/static/js/runtime-main.ffdc7b88.js.map",
     "static/css/2.829c9cb5.chunk.css": "/todo-client/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.df3d0322.chunk.js": "/todo-client/static/js/2.df3d0322.chunk.js",
-    "static/js/2.df3d0322.chunk.js.map": "/todo-client/static/js/2.df3d0322.chunk.js.map",
+    "static/js/2.a222b270.chunk.js": "/todo-client/static/js/2.a222b270.chunk.js",
+    "static/js/2.a222b270.chunk.js.map": "/todo-client/static/js/2.a222b270.chunk.js.map",
     "index.html": "/todo-client/index.html",
-    "precache-manifest.0c0503e2b3b5bb66369479efbbea16f5.js": "/todo-client/precache-manifest.0c0503e2b3b5bb66369479efbbea16f5.js",
+    "precache-manifest.4f69c9fe9113de41de2ff2009c6774d9.js": "/todo-client/precache-manifest.4f69c9fe9113de41de2ff2009c6774d9.js",
     "service-worker.js": "/todo-client/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/todo-client/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.eea13354.chunk.css.map": "/todo-client/static/css/main.eea13354.chunk.css.map",
-    "static/js/2.df3d0322.chunk.js.LICENSE.txt": "/todo-client/static/js/2.df3d0322.chunk.js.LICENSE.txt"
+    "static/js/2.a222b270.chunk.js.LICENSE.txt": "/todo-client/static/js/2.a222b270.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ffdc7b88.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.df3d0322.chunk.js",
+    "static/js/2.a222b270.chunk.js",
     "static/css/main.eea13354.chunk.css",
-    "static/js/main.472e960a.chunk.js"
+    "static/js/main.bc89548d.chunk.js"
   ]
 }
